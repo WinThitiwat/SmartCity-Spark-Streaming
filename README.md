@@ -1,4 +1,4 @@
-
+# [WIP] SmartCity-Spark-Streaming Pipeline
 
 ## Project Setup
 1. In `jobs` directory, create app.config with the following template
