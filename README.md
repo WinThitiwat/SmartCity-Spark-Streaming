@@ -1,12 +1,28 @@
 # [WIP] SmartCity-Spark-Streaming Pipeline
 
-## Project Setup
-1. In `jobs` directory, create app.config with the following template
+## Prerequisite Setup
+### Project Setup
+1. In `jobs` directory, create `app.config` with the following template
 ```
 [AWS]
 ACCESS_KEY='<YOUR_KEY>'
 ACCESS_SECRET='<YOUR_SECRET>'
+
+[S3]
+BASE_CHECKPOINT=<S3-Bucket-Name-URI>/checkpoints
+BASE_DATA=<S3-Bucket-Name-URI>/data
 ```
+2. Make sure to create virtual environment to test on local (if not on Docker)
+
+### Amazon S3 Bucket setup
+1. Make sure to set up your Amazon S3 and bucket to store the data. Below is the bucket and directory structure required by the codebase.
+
+   ```
+   Bucket-Name
+     - checkpoints
+     - data
+   ```
+
 
 ## To run
 0. Spin up the docker images. Check if all are in running state.
