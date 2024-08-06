@@ -1,4 +1,11 @@
 # [WIP] SmartCity-Spark-Streaming Pipeline
+This is to simulate a situation of a smart city where streaming data is being generated from various sources, such as vehicle, gps, traffic camera, weather monitoring system, and emergency info. This real-time pipeline is here to support the data accessibility.
+
+This project is to practice real-time data pipeline using Apache Kafka to stream data, Spark Streaming to process the data in real-time manner, and sink the data into S3 bucket as data lake. Later on, the S3 datalake is being analyzed by AWS Glue Catalog to manage the metadata, and then being used by analytical purpose, such as Athena, or Quicksight.
+
+
+## System Architecture
+WIP
 
 ## Prerequisite Setup
 ### Project Setup
